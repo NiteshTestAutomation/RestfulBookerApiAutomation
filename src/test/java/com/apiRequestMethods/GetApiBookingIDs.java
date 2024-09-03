@@ -29,6 +29,7 @@ public class GetApiBookingIDs {
 		
 		ValidatableResponse valResp = response.then();
 		
+		// Validate Response code
 		valResp.statusCode(200);
 		
 		

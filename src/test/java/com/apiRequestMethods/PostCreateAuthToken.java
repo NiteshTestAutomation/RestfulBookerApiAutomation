@@ -31,6 +31,7 @@ public class PostCreateAuthToken {
 		
 		ValidatableResponse validateResponse = response.then();
 		
+		// Validate Response code
 		validateResponse.statusCode(200);
 		
 		validateResponse.body("token",Matchers.notNullValue());
